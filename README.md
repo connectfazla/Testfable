@@ -1,6 +1,6 @@
-# Sabbir · Portfolio
+# Fazla Rabbi · Portfolio
 
-Awwwards-style one-page developer portfolio for **Sabbir ([darkksabbir](https://github.com/darkksabbir))**. Static site, no build step. Design polished with the [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) design system (Motion-Driven style, Trust Blue palette).
+Awwwards-style one-page portfolio for **Fazla Rabbi** — a project manager and web developer with 6+ years leading cross-functional teams for international clients. Static site, no build step. Design polished with the [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) design system (Motion-Driven style, Trust Blue palette).
 
 ## Run it
 
@@ -15,9 +15,9 @@ Any static server works.
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | The home page (hero, tech marquee, work, about, stack, philosophy, contact) |
+| `index.html` | The home page (hero, skills marquee, experience, about, stack, philosophy, contact) |
 | `css/tokens.css` | Design tokens: Trust Blue palette, type scale, spacing, motion |
-| `css/main.css` | Components, all reading from tokens (+ scroll progress, tech pills, monogram) |
+| `css/main.css` | Components, all reading from tokens (+ experience, scroll progress, tech pills, monogram) |
 | `js/fluid.js` | three.js fluid shader hero (domain-warped fbm, pointer-reactive) |
 | `js/main.js` | GSAP ScrollTrigger choreography + scroll progress bar |
 | `js/theme.js` | Light (default) / dark toggle, persisted |
@@ -25,17 +25,16 @@ Any static server works.
 | `assets/fonts/` | Self-hosted Inter and Space Grotesk (variable, latin subset) |
 | `DESIGN-SYSTEM.md` | System documentation |
 
-## Content notes
+## Content
 
-Some content is **placeholder** pending real details. Swap these in when ready:
+All content is real, sourced from Fazla Rabbi's CV:
 
-- **Projects 02–04** ("Realtime Dashboard", "Commerce API", "Component Library") are representative examples — replace with real repos/case studies. Project 01 (`upp`) links to the real GitHub repo.
-- **Stats** (projects shipped, years, technologies) are placeholder numbers.
-- **Email** `hello@darkksabbir.dev` is a placeholder — update to a real address.
-- **GitHub** and **LinkedIn** links point to the real `darkksabbir` profiles.
-- The portrait is a stylized "S" monogram rather than a photo — drop in a headshot if preferred.
+- **Experience** — Middle Manager & Project Manager at UPPEARANCE (Dubai, remote), and freelance UX/web work via Upwork.
+- **Stats** — 6+ years, 50+ websites delivered, 100% client satisfaction.
+- **Contact** — email `connectfazla@gmail.com`, phone, website `fazla.dev`, and LinkedIn (`darkksabbir`).
+- The portrait is a stylized "F" monogram; drop in a headshot if preferred.
 
 ## Notes
 
-- Photography is hot-linked from Unsplash (free license); everything else is self-hosted, so the page works offline apart from photos.
+- The page is fully self-hosted (fonts, JS, icons) and works offline — no external images.
 - Respects `prefers-reduced-motion` throughout.

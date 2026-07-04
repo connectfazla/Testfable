@@ -1,10 +1,10 @@
-# Sabbir (darkksabbir) Design System
+# Fazla Rabbi (fazla.dev) Design System
 
 Small, token-driven system behind the portfolio. Every component in `css/main.css` reads only the variables defined in `css/tokens.css`. Nothing is hardcoded at the component level. Direction refined with the [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) skill (Motion-Driven style, Portfolio Grid pattern, monochrome + blue accent).
 
 ## Direction
 
-- **Brief:** trustworthy, calm, precise. A full-stack developer's portfolio where credibility and reliability are the product.
+- **Brief:** trustworthy, calm, precise. A project manager and web developer's portfolio where on-time delivery and reliability are the product.
 - **Dials:** design variance 6 / motion intensity 6 / visual density 4.
 - **Foundation:** custom tokens + GSAP for motion + Phosphor for icons + three.js for the hero shader. One system, no mixing.
 
@@ -36,7 +36,7 @@ Fluid scale via `clamp()`: `--text-xs` through `--text-mega`. Headline tracking 
 
 8px base scale (`--space-1` to `--space-24`), plus `--space-section` (fluid 80 to 176px) for vertical rhythm and `--gutter` (fluid 20 to 64px) for page margins. Max content width `--container: 90rem`.
 
-Section layout families on the home page, in order: full-bleed hero, marquee strip, editorial project grid (wide / staggered halves / wide), sticky split about, full-width service rows, centered quote, mega-type footer. No two adjacent sections share a family.
+Section layout families on the home page, in order: full-bleed hero, marquee strip, two-column experience list, sticky split about, full-width service rows, centered quote, mega-type footer. No two adjacent sections share a family.
 
 ## Motion
 
