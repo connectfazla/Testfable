@@ -8,6 +8,20 @@
   if (typeof gsap === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
 
+  /* ---- Scroll progress bar (runs regardless of reduced motion) ---- */
+  var progress = document.querySelector('[data-progress]');
+  if (progress) {
+    var updateProgress = function () {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - doc.clientHeight;
+      var ratio = max > 0 ? doc.scrollTop / max : 0;
+      progress.style.transform = 'scaleX(' + ratio + ')';
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress, { passive: true });
+    updateProgress();
+  }
+
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduceMotion) {
     document.querySelectorAll('[data-count]').forEach(function (el) {

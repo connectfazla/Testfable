@@ -1,10 +1,10 @@
-# nadir.studio Design System
+# Sabbir (darkksabbir) Design System
 
-Small, token-driven system behind the portfolio. Every component in `css/main.css` reads only the variables defined in `css/tokens.css`. Nothing is hardcoded at the component level.
+Small, token-driven system behind the portfolio. Every component in `css/main.css` reads only the variables defined in `css/tokens.css`. Nothing is hardcoded at the component level. Direction refined with the [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) skill (Motion-Driven style, Portfolio Grid pattern, monochrome + blue accent).
 
 ## Direction
 
-- **Brief:** trustworthy, calm, precise. A portfolio for fintech and health clients where credibility is the product.
+- **Brief:** trustworthy, calm, precise. A full-stack developer's portfolio where credibility and reliability are the product.
 - **Dials:** design variance 6 / motion intensity 6 / visual density 4.
 - **Foundation:** custom tokens + GSAP for motion + Phosphor for icons + three.js for the hero shader. One system, no mixing.
 
@@ -42,7 +42,7 @@ Section layout families on the home page, in order: full-bleed hero, marquee str
 
 Tokens: `--ease-out`, `--ease-in-out`, `--dur-fast|base|slow`. Rules:
 
-- Scroll animation runs through GSAP ScrollTrigger only, never raw scroll listeners.
+- Section reveals, parallax and counters run through GSAP ScrollTrigger. The one exception is the top scroll-progress bar, a lightweight passive scroll listener that also runs under reduced motion.
 - The hero fluid field is a three.js shader plane (domain-warped fbm) tinted from the active palette; it re-tints on the `themechange` event and pauses when off-screen.
 - `prefers-reduced-motion` collapses everything to a single still frame and instant reveals.
 - One marquee on the page, maximum.
